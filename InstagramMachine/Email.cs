@@ -14,10 +14,10 @@ namespace InstagramMachine
             try
             {
                 MailMessage mailMsg = new MailMessage();
-                mailMsg.To.Add("magicmemers@hotmail.com");
+                mailMsg.To.Add("xxx@hotmail.com");
 
                 // From
-                MailAddress mailAddress = new MailAddress("magicmemers@hotmail.com");
+                MailAddress mailAddress = new MailAddress("xxx@hotmail.com");
                 mailMsg.From = mailAddress;
 
                 // Subject and Body
@@ -26,7 +26,7 @@ namespace InstagramMachine
 
                 SmtpClient smtpClient = new SmtpClient("smtp-mail.outlook.com", 587);
                 System.Net.NetworkCredential credentials =
-                   new System.Net.NetworkCredential("magicmemers@hotmail.com", "Fresc@13");
+                   new System.Net.NetworkCredential("xxx@hotmail.com", "xxx");
                 smtpClient.Credentials = credentials;
                 smtpClient.EnableSsl = true;
 
